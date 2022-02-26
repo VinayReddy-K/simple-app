@@ -4,10 +4,10 @@ pipeline{
     maven 'maven3'
   }
   stages{
-      stage('Bulid stage'){
-        steps{
-          sh 'mvn clean package'
-        }
+    stage('Bulid stage'){
+      steps{
+        sh 'mvn clean package'
       }
+    }
   }
 }
