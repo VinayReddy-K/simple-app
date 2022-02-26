@@ -1,10 +1,11 @@
 pipeline{
   agent any
+  tool name: 'maven3', type: 'maven'
   stages{
       stage('Bulid stage'){
-        sh '''
-          mvn clean package
-        '''
+        steps{
+          sh 'mvn clean package'
+        }
       }
   }
 }
