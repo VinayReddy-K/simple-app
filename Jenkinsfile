@@ -1,6 +1,8 @@
 pipeline{
   agent any
-  tool name: 'maven3', type: 'maven'
+  tools {
+    name: 'maven3', type: 'maven
+  }
   stages{
       stage('Bulid stage'){
         steps{
